@@ -1,0 +1,35 @@
+.image-text-container {
+  position: relative; /* Enable positioning for the overlay */
+}
+
+.image-text-container img {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain image aspect ratio */
+}
+
+.image-overlay {
+  position: absolute; /* Position the overlay on top of the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Cover the entire image */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white; /* Text color */
+  display: flex; /* Arrange text and button vertically */
+  flex-direction: column; /* Stack elements on top of each other */
+  justify-content: center; /* Vertically center content within the overlay */
+  align-items: center; /* Horizontally center content within the overlay */
+  padding: 20px; /* Add some padding for better readability */
+}
+
+.image-overlay p {
+  margin-bottom: 10px; /* Add spacing between paragraphs */
+}
+
+.image-overlay button {
+  background-color: #333; /* Adjust button color as desired */
+  color: white;
+  padding: 10px 20px; /* Adjust padding as desired */
+  border: none; /* Remove default button border */
+  cursor: pointer; /* Indicate clickable element */
+}
